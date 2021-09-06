@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ERROR_COLOR='\033[0;31m'
+VALID_COLOR='\033[32m'
+CLEAR_COLOR='\033[0m'

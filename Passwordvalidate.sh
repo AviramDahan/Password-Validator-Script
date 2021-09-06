@@ -7,7 +7,7 @@ CLEAR_COLOR='\033[0m'
 
 #PASSWORD 
 echo "Please Enter Your Password please: "
-password='12345678a'
+password='123456789Aa'
 CHECK=0
 
 #Returns to the user that the number of letters is less than 10

@@ -6,8 +6,7 @@ VALID_COLOR='\033[32m'
 CLEAR_COLOR='\033[0m'
 
 #PASSWORD 
-echo "Please Enter Your Password please: "
-password='123456789Aa'
+password='12345678910a'
 CHECK=0
 
 #Returns to the user that the number of letters is less than 10
@@ -16,7 +15,6 @@ then
 ((CHECK++))
 else
 echo -e $ERROR_COLOR "Password less than 10 characters "$CLEAR_COLOR
-exit 1
 fi
 
 #Returns to the user that Missing upper letter
@@ -25,7 +23,6 @@ then
 ((CHECK++))
 else
 echo -e $ERROR_COLOR "password does not include uppercase letters "$CLEAR_COLOR
-exit 1
 fi
 
 
@@ -35,13 +32,14 @@ then
 ((CHECK++))
 else
 echo -e $ERROR_COLOR "password does not include lowercase letters "$CLEAR_COLOR
-exit 1
 fi
 
 #Conditions for password Valid len >= 10 && Upper\Lower letters:
 if [ $CHECK -eq 3 ];
 then
-   echo -e $VALID_COLOR  $password "
-   Password Valid"$CLEAR_COLOR
-   exit 0
+echo -e $VALID_COLOR  $password "
+Password Valid"$CLEAR_COLOR
+exit 0
+else
+exit 1
 fi

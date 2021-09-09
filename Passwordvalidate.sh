@@ -6,8 +6,17 @@ VALID_COLOR='\033[32m'
 CLEAR_COLOR='\033[0m'
 
 #PASSWORD 
-password='12345678910a'
+password=$1
 CHECK=0
+
+#Option -f added, reading password.txt file and setting the password according to the password in the file.
+while getopts "f:" opt; do
+    case $opt in
+f) 
+password=`cat "password.txt"`;;
+\?) ;;
+esac
+done
 
 #Returns to the user that the number of letters is less than 10
 if [ ${#password} -gt 9 ];

@@ -37,7 +37,7 @@ fi
 #Conditions for password Valid len >= 10 && Upper\Lower letters:
 if [ $CHECK -eq 3 ];
 then
-echo -e $VALID_COLOR  $password "
+echo -e $VALID_COLOR "
 Password Valid"$CLEAR_COLOR
 exit 0
 else

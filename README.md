@@ -8,4 +8,4 @@ Bash script to validate password
 * Include both the small and capital case letters.
 
 
-![Imgur Image](https://imgur.com/a/0CL5aD8)
+![Imgur Image](https://imgur.com/Qb2YYZn)
